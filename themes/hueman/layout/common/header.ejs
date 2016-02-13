@@ -1,0 +1,54 @@
+<header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="<%- url_for() %>" class="logo"></a>
+                    </h1>
+                    <% if (theme.subtitle) { %>
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle"><%= theme.subtitle %></p>
+                        </h2>
+                    <% } %>
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                      <ul id="main-nav">
+                            <li class="main-nav-list-item">
+                                <a class="main-nav-list-link" href="/">主页</a>
+                            </li>
+                            <ul class="main-nav-list">
+                                <li class="main-nav-list-item"><a class="main-nav-list-link" href="#">愛科技</a>
+                                    <ul class="main-nav-list-child">
+                                        <li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Learning/Learning-Highcharts/">Learning Highcharts</a></li>
+                                        <li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/WEB2-0/">WEB2.0</a></li>
+                                        <li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Oracle/">Oracle</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list-item"><a class="main-nav-list-link" href="#">愛應用</a>
+                                    <ul class="main-nav-list-child">
+                                        <li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/業務案例/">業務案例</a></li>
+                                        <li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/行業動態/">行業動態</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list-item"><a class="main-nav-list-link" href="#">愛生活</a>
+                                    <ul class="main-nav-list-child">
+                                        <li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/隨筆/">隨筆</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <li class="main-nav-list-item">
+                                <a class="main-nav-list-link" href="/about">关于</a>
+                            </li>
+                        </ul>
+                        <nav id="sub-nav">
+                            <%- partial('search/index') %>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

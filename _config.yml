@@ -4,7 +4,7 @@
 
 # Site
 title: 科技零售
-subtitle: RetailScm
+subtitle: PP Studio
 description:
 author: Paul Lu
 author_title: 'Project Manager'
@@ -65,7 +65,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: Icarus
+theme: Hueman
 
 # Plugins
 
